@@ -1,0 +1,18 @@
+create table if not exists market_trade_compliance_levels(
+market_trade_compliance_code Integer not null,
+market_trade_compliance_tree_id Integer null,
+market_trade_compliance_tree_effective_date varchar(255) not null,
+market_trade_compliance_tree_code Integer not null,
+market_trade_compliance_tree_decription varchar(255) not null,
+subdivisionInstrumentalities1 varchar(255) null,
+subdivisionInstrumentalities1_desc varchar(255) null,
+subdivisionInstrumentalities2 varchar(255) null,
+subdivisionInstrumentalities2_desc varchar(255) null,
+subdivisionInstrumentalities3 varchar(255) null,
+subdivisionInstrumentalities3_desc varchar(255) null,
+subdivisionInstrumentalities4 varchar(255) null,
+subdivisionInstrumentalities4_desc varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint market_trade_compliance_levels_pk primary key(market_trade_compliance_code));
